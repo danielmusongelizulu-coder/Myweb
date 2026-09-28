@@ -1,0 +1,99 @@
+/* ELEMENT selectors: style every tag of that type */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f4f7fb;
+  color: #1c2733; /* dark text on a light background = good contrast */
+}
+
+img, video {
+  max-width: 100%;   /* never wider than the container */
+  height: auto;      /* keep the correct proportions */
+}
+
+header {
+  background-color: #1f3a5f;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+h1 { margin: 0 0 0.5rem; font-size: 2.2rem; }
+h2 { color: #1f3a5f; border-bottom: 2px solid #e0a030; padding-bottom: 0.3rem; }
+
+nav {
+  background-color: #14263f;
+  display: flex;
+  flex-wrap: wrap;     /* links wrap on small screens instead of overflowing */
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+}
+
+nav a, button {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2b5d9b;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* hover AND focus, so keyboard users get feedback too */
+nav a:hover, nav a:focus, button:hover, button:focus {
+  background-color: #e0a030;
+  color: #14263f;
+  outline: 2px solid #ffffff;
+}
+
+main { max-width: 900px; margin: 0 auto; padding: 1rem; }
+
+/* CLASS selector: reused on every section. This shows the box model:
+   padding (inside), border (edge), margin (outside) */
+.content-section {
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  border: 2px solid #456;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* ID selector: for ONE unique section */
+#about { background-color: #eaf2fb; }
+
+/* Gallery: grid that adapts to the screen width */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.gallery figure { margin: 0; }
+figcaption { font-size: 0.9rem; color: #445; margin-top: 0.3rem; }
+
+table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+caption { font-weight: bold; margin-bottom: 0.5rem; text-align: left; }
+th, td { border: 1px solid #99a; padding: 0.5rem; text-align: left; }
+th { background-color: #1f3a5f; color: #ffffff; }
+
+/* Form: stack fields vertically */
+form { display: flex; flex-direction: column; gap: 0.5rem; }
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #789;
+  border-radius: 4px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+audio { width: 100%; }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #14263f;
+  color: #ffffff;
+}
