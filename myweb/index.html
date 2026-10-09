@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daniel Zulu's Computer Science with AI student portfolio at Mulungushi University.">
+  <title>Daniel Zulu | Student Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="hero">
+      <p class="eyebrow">MULUNGUSHI UNIVERSITY · SCHOOL OF ENGINEERING AND TECHNOLOGY</p>
+      <h1>Daniel Zulu</h1>
+      <p class="hero-programme">Computer Science with AI</p>
+      <p class="hero-intro">First-year student exploring how thoughtful design and code can make useful things for people.</p>
+      <a class="button-link" href="#skills">View My Projects</a>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#plan">Learning Plan</a>
+    <a href="#skills">Projects &amp; Skills</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about" class="content-section about-section">
+      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <h2>About Me</h2>
+      <p>
+        My name is Daniel Zulu, and I am a first-year Computer Science with AI student
+        at Mulungushi University. I am curious about how websites and software are
+        designed, built, and improved. I chose this programme because I want to
+        understand the technology behind the digital tools people use every day.
+        I am developing my skills step by step, starting with web technologies and
+        practising by building small projects. In my free time I enjoy games, chess,
+        and reading. I hope to keep learning, solve practical problems, and create
+        useful digital experiences.
+      </p>
+      <p class="student-meta">Computer Science with AI · Mulungushi University</p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <p class="eyebrow">OUTSIDE MY STUDIES</p>
+      <h2>My Hobbies</h2>
+      <div class="hobby-list">
+        <article class="hobby-card">
+          <h3>Games</h3>
+          <p>I enjoy playing games in my free time.</p>
+        </article>
+        <article class="hobby-card">
+          <h3>Chess</h3>
+          <p>Chess gives me a chance to think ahead and consider different moves.</p>
+        </article>
+        <article class="hobby-card">
+          <h3>Reading</h3>
+          <p>I make time to read and explore ideas beyond my course work.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="plan" class="content-section">
+      <p class="eyebrow">LEARN · PRACTISE · IMPROVE</p>
+      <h2>My Learning Plan</h2>
+      <h3>Steps to improve my web skills</h3>
+      <ol class="learning-steps">
+        <li>Finish HTML and CSS practice exercises every week.</li>
+        <li>Build one small project using only what I have learned.</li>
+        <li>Learn basic JavaScript to make pages interactive.</li>
+      </ol>
+
+      <div class="table-wrap">
+        <table>
+          <caption>My weekly web learning plan</caption>
+          <thead>
+            <tr><th scope="col">Day</th><th scope="col">Topic</th><th scope="col">Practice task</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>HTML structure</td><td>Rebuild a page using semantic tags</td></tr>
+            <tr><td>Wednesday</td><td>CSS layout</td><td>Make a photo grid with Flexbox</td></tr>
+            <tr><td>Friday</td><td>Forms</td><td>Build a form with validation</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section">
+      <p class="eyebrow">WORK IN PROGRESS</p>
+      <h2>Projects &amp; Skills</h2>
+      <p class="section-intro">A few areas I have practised so far. Search the cards or open a card to see more detail.</p>
+      <div class="project-tools">
+        <label for="project-search">Search projects or skills</label>
+        <div class="search-controls">
+          <input type="search" id="project-search" placeholder="Try HTML, CSS or JavaScript">
+          <button class="button button-secondary" id="clear-search" type="button">Reset search</button>
+        </div>
+        <p id="search-status" class="status-message" aria-live="polite"></p>
+      </div>
+      <div class="project-grid" id="project-list">
+        <article class="project-card" data-search="html semantic structure web page">
+          <h3>Semantic HTML page</h3>
+          <p class="project-tags">HTML · Page structure</p>
+          <button class="button details-toggle" type="button" aria-expanded="false" aria-controls="project-html-details">Show details</button>
+          <div class="project-details" id="project-html-details" hidden>
+            <p>I practised structuring a page with headings, sections, navigation, lists, images, and accessible form labels.</p>
+          </div>
+        </article>
+        <article class="project-card" data-search="css responsive layout flexbox gallery">
+          <h3>Responsive photo layout</h3>
+          <p class="project-tags">CSS · Flexbox · Responsive design</p>
+          <button class="button details-toggle" type="button" aria-expanded="false" aria-controls="project-css-details">Show details</button>
+          <div class="project-details" id="project-css-details" hidden>
+            <p>I used external CSS, spacing, borders, and a flexible grid so the content can adapt to different screen sizes.</p>
+          </div>
+        </article>
+        <article class="project-card" data-search="javascript form validation dom events">
+          <h3>Interactive portfolio features</h3>
+          <p class="project-tags">JavaScript · Events · DOM</p>
+          <button class="button details-toggle" type="button" aria-expanded="false" aria-controls="project-js-details">Show details</button>
+          <div class="project-details" id="project-js-details" hidden>
+            <p>I am practising event listeners and DOM updates with a local form preview, project filtering, and a photo viewer.</p>
+          </div>
+        </article>
+      </div>
+      <p id="no-projects" class="empty-state" hidden>No projects or skills match that search. Try another word or reset the search.</p>
+    </section>
+
+    <section id="photos" class="content-section">
+      <p class="eyebrow">MOMENTS FROM MY PHOTO COLLECTION</p>
+      <h2>My Photos</h2>
+      <div class="gallery" id="photo-gallery" aria-label="Photo gallery">
+        <figure>
+          <img src="Photos/Photo%201.jpg" alt="Daniel holding a baby in a pink outfit outdoors" loading="lazy">
+          <figcaption>A family moment outdoors.</figcaption>
+        </figure>
+        <figure>
+          <img src="Photos/Photo%202.jpeg" alt="Daniel wearing a black shirt and standing in front of a stone wall" loading="lazy">
+          <figcaption>A portrait in front of a stone wall.</figcaption>
+        </figure>
+        <figure>
+          <img src="Photos/Photo%203.jpeg" alt="Daniel standing beside a white vehicle on a sunny day" loading="lazy">
+          <figcaption>A sunny day outdoors.</figcaption>
+        </figure>
+      </div>
+      <div class="gallery-controls" aria-label="Photo viewer controls">
+        <button class="button" id="previous-photo" type="button" aria-label="Show previous photo">Previous</button>
+        <p id="gallery-status" class="status-message" aria-live="polite">Photo 1 of 3</p>
+        <button class="button" id="next-photo" type="button" aria-label="Show next photo">Next</button>
+      </div>
+    </section>
+
+    <section id="media" class="content-section">
+      <p class="eyebrow">LISTEN AND WATCH</p>
+      <h2>My Media</h2>
+      <div class="media-grid">
+        <article class="media-card">
+          <h3>Video introduction</h3>
+          <video controls preload="metadata">
+            <source src="videos/intro.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+          <p>This short video introduces me, my programme, and the web skill I hope to learn.</p>
+        </article>
+        <article class="media-card">
+          <h3>Audio clip</h3>
+          <audio controls preload="metadata">
+            <source src="videos/voice.m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+          </audio>
+          <p>This is a short audio sample from my Activity 2 media. Use the player controls to listen and pause.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section">
+      <p class="eyebrow">SAY HELLO</p>
+      <h2>Contact</h2>
+      <p>This is a browser demonstration only — no message is sent.</p>
+      <form id="contact-form" novalidate>
+        <div class="form-field">
+          <label for="name">Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+          <small class="field-error" id="name-error"></small>
+        </div>
+        <div class="form-field">
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+          <small class="field-error" id="email-error"></small>
+        </div>
+        <div class="form-field">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option>General question</option>
+            <option>Collaboration</option>
+            <option>Feedback</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+          <small class="field-error" id="message-error"></small>
+        </div>
+        <button class="button" type="submit">Preview message</button>
+        <p id="form-status" class="status-message" role="status" aria-live="polite"></p>
+      </form>
+      <section id="form-preview" class="form-preview" aria-labelledby="preview-heading" hidden>
+        <h3 id="preview-heading">Validated form preview</h3>
+        <p>Your data was validated in this browser. No message was delivered or sent.</p>
+        <dl>
+          <dt>Name</dt><dd id="preview-name"></dd>
+          <dt>Email</dt><dd id="preview-email"></dd>
+          <dt>Topic</dt><dd id="preview-topic"></dd>
+          <dt>Message</dt><dd id="preview-message"></dd>
+        </dl>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Daniel Zulu · ICT251 Web Technologies</p>
+    <a href="https://github.com/danielmusongelizulu-coder/Myweb" target="_blank" rel="noopener noreferrer">View Source on GitHub</a>
+  </footer>
+</body>
+</html>
